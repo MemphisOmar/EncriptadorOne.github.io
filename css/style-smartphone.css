@@ -1,0 +1,119 @@
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+
+  .main-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container-input {
+    width: 100%;
+    height: 70%;
+  }
+
+  .input-text {
+    padding: 0.5vw;
+  }
+
+  ::placeholder {
+    text-align: center;
+    font-size: 5.5vw;
+    padding: 0.5vw;
+  }
+
+  .informacion {
+    padding: 0;
+    width: 100%;
+    height: 3vh;
+    font-size: 4vw;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .btn-encriptar:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  .btn-desencriptar:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  .btn-copiar:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  .container-output {
+    width: 100%;
+    height: 30%;
+  }
+
+  .output-initial {
+    width: 90%;
+    height: 100%;
+  }
+
+  .muñeco {
+    display: none;
+  }
+
+  .mensaje-inicial {
+    font-size: 4vw;
+    padding-top: 3rem;
+  }
+
+  .insert-text {
+    font-size: 2vh;
+    height: 10vh;
+  }
+
+  .output-result {
+    width: 90%;
+    height: 25vh;
+  }
+
+  .output-text {
+    padding: 0.5rem;
+    font-size: 6vw;
+  }
+
+  .btn-copiar {
+    width: 80%;
+    height: 6vh;
+  }
+
+  .copyright {
+    flex-direction: column;
+    padding-top: 2rem;
+    font-size: 2vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact {
+    padding-bottom: 1rem;
+  }
+  .icono {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+<!-- 
+    ENCRIPTADOR DE TEXTO CHALLENGE ALURA G5
+ -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encriptador del Challenge 1 de Oracle One" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-tablet.css" />
+    <link rel="stylesheet" href="css/style-smartphone.css" />
+    <title>Challenge Encriptador</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-container">
+        <img class="logo" src="imagenes/One.png" alt="Logo Alura" />
+      </header>
+      <main class="main-container">
+        <section class="container-input">
+          <textarea
+            class="input-text"
+            cols="30"
+            rows="10"
+            autofocus
+            placeholder="INGRESA EL TEXTO AQUÍ"></textarea>
+          <div class="informacion">
+            <h6>
+              <img src="imagenes/exclamation.svg" alt="icon" />
+              Solo ingresar letras minúsculas y sin acentos
+            </h6>
+          </div>
+          <div class="buttons">
+            <button class="btn-encriptar" onclick="btnEncrypt()">
+              <i class="bi bi-lock"></i> > Encriptar texto
+            </button>
+            <button class="btn-desencriptar" onclick="btnDecrypt()">
+              <i class="bi bi-unlock"></i> > Desencriptar texto
+            </button>
+          </div>
+        </section>
+        <section class="container-output">
+          <article class="output-initial" id="output-initial">
+            <img class="muñeco" src="imagenes/Encrip.png" alt="Muñeco" />
+            <p class="mensaje-inicial">No se encontro ningun mensaje</p>
+            <span class="insert-text">Por favor ingresa el texto que deseas Desencriptar/Encriptar</span>
+          </article>
+          <article class="output-result disable" id="output-result">
+            <textarea class="output-text" id="content" cols="30" rows="10" disabled></textarea>
+            <div class="copiar">
+              <button class="btn-copiar" id="copy" onclick="copy()">
+                <i class="bi bi-clipboard-check"></i> > Copiar
+              </button>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer class="footer-container">
+        <div class="copyright">
+          <h3>&copy; Copyright Alura Latam/Oracle One - Challenge Encriptador 2023</h3>
+          <div class="contact">
+            <h3>Desarrollado por Omar Martinez</h3>
+            <a
+              class="icono"
+              href="https://www.linkedin.com/in/edgaromarmartinezvega/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a class="icono" href="https://github.com/MemphisOmar" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
